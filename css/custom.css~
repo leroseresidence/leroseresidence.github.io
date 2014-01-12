@@ -1,0 +1,9 @@
+.fb-like-box {
+	float: right;
+	position:relative;
+	overflow:hidden
+}
+
+.grid_12 {
+	width: 960px
+}

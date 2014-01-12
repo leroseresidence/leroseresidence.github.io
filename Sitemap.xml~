@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1"
+	xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1">
+	<url> 
+		<loc>http://www.leroseresidence.com/index.html</loc> 
+		<loc>http://www.leroseresidence.com/about.html</loc> 
+		<loc>http://www.leroseresidence.com/rooms.html</loc> 
+		<loc>http://www.leroseresidence.com/rates.html</loc> 
+		<loc>http://www.leroseresidence.com/location.html</loc> 
+		<loc>http://www.leroseresidence.com/reservations.html</loc> 
+		<loc>http://www.leroseresidence.com/contacts.html</loc> 
+	</url>
+</urlset>

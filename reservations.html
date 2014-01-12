@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Prenotazioni | Effetua la scelta del tuo Appartamento per vacanze</title>
+<meta name="Sorem Broker Srl" content="Hotel delle Rose" />
+<meta name="description" content="Le Rose Residence - Casa Vacanze. Appartamenti per vacanze sito nel Comune di Casalbuono (Salerno). Richiedi informazioni e prenota la tua vacanza" />
+<meta name="keywords" content="Appartamenti, appartamenti vacanze, appartamenti per vacanze, Vallo di Diano, Golfo di Policastro, Residence, Hotel,Hotels,case vacanze, case in  montagna, Certosa di Padula, certosa di san lorenzo, Casalbuono, Comune Casalbuono" />
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".widget_recent_entries li:even").addClass("even");
+		$(".table-price tbody tr:odd").addClass("odd");
+	});
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/wi-theme/jquery-ui-1.8.9.custom.css" />
+<link rel="stylesheet" type="text/css" href="css/ui.selectmenu.css" />
+<script type="text/javascript" language="javascript" src="js/jquery-ui-1.8.9.custom.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/ui.selectmenu.js"></script>
+<script type="text/javascript" language="javascript" src="js/styled.selectmenu.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(function(){
+  var bookedDays = ["2011-2-22","2011-2-23","2011-3-8","2011-3-9","2011-3-10"];
+  
+  function assignCalendar(id){
+    $('<div class="calendar" />')
+      .insertAfter( $(id) )
+      .datepicker({ 
+        dateFormat: 'dd-mm-yy', 
+        minDate: new Date(), 
+        maxDate: '+1y', 
+        altField: id, 
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+        beforeShowDay: isAvailable })
+      .prev().hide();
+  }
+  
+  function isAvailable(date){
+    var dateAsString = date.getFullYear().toString() + "-" + (date.getMonth()+1).toString() + "-" + date.getDate();
+    var result = $.inArray( dateAsString, bookedDays ) ==-1 ? [true] : [false];
+    return result
+  }
+
+  assignCalendar('#date_in_input');
+  assignCalendar('#date_out_input');
+});
+// ]]>
+</script>
+<script type="text/javascript" language="javascript" src="js/reservations.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33923813-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="head">
+<div class="container">
+
+	<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" width="405" height="101" border="0" /></a></div>
+    
+    <div class="head_right">
+    	<div class="icon-top icon-phone">Per Info Urgenti Chiamare il Numero: <span>+39-338-1512274</span></div>
+        <div class="icon-top icon-map">Via Nazionale 10, Casalbuono (SA), <a href="location.html"><span>Visualizza sulla Mappa</span></a></div>
+    </div>
+</div>
+</div>
+
+<!-- topmenu -->  
+<div class="menu-header">
+	<div class="container">
+		<ul class="topmenu">
+			<li class="first"><a href="index.html">Home</a></li>
+			<li><a href="about.html">Chi siamo</a></li>
+			<li><a href="rooms.html">Appartamenti</a></li>
+			<li><a href="rates.html">Prezzi</a></li>
+			<li><a href="location.html">Location</a></li>                        
+			<li class="current-menu-item"><a href="reservations.html">Prenotazioni</a></li>
+			<li><a href="news.html">News &amp; Promo</a></li>
+			<li class="last"><a href="contacts.html">Contatti</a></li>
+		</ul>
+
+        </div>
+</div>        
+<!--/ topmenu -->
+
+<div class="header">
+	<div class="container">&nbsp;</div>  
+</div>
+<div class="header-line"></div>
+
+<div class="middle">
+<div class="container">
+
+	<div class="header-title-image">
+    	<div class="image"><img src="images/header/header_7.jpg" width="708" height="124" alt="" /></div>
+    	<h1><span>Effetua una </span> Prenotazione</h1>
+    </div>
+    
+    <!-- middle content -->
+    <div class="container_24">
+    	
+        <!-- content -->
+    	<div class="grid_17 suffix_1">
+       	  	<div class="text">
+            
+                <h2>INVIO RICHIESTA PER PRENOTAZIONE:</h2>
+                
+                <form action="reservations.php" method="post" class="reservationForm" id="reservationForm">
+                
+                	<!-- column 1 -->
+                    <div class="column_3">
+                        <div class="row field_select">
+							<label>Selezione tipo di <strong>Appartamento</strong>:</label><br />
+                            <select class="select_styled" name="reserv_type" id="reserv_type">
+                                <option value="Rose_Rosse">Appartamento Rose Rosse</option>
+                                <option value="Rose_Arancio">Appartamento Rose Arancio</option>
+                                <option value="Rose_Rosa">Appartamento Rose Rosa</option>
+                                <option value="Rose_Bianche">Appartamento Rose Bianche</option>
+                                <option value="Rose_Gialle">Appartamento Rose Gialle</option>
+                            </select>
+						</div>
+                        
+                        <div class="row field_select">
+							<div class="split_1">
+                            <label>No. di adulti:</label><br />
+                            <select class="select_styled" name="reserv_no_adults" id="reserv_no_adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            </div>
+                            
+                            <div class="split_2">
+                            <label>No. di bambini:</label><br />
+                            <select class="select_styled" name="reserv_no_children" id="reserv_no_children">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            </div>
+                            <div class="clear"></div>
+						</div>
+                        
+                        <div class="row field_text">
+                            <label>Il vostro indirizzo email:</label><br />
+                            
+                            <input name="email" value="" id="email" class="inputtext required" size="40" type="text" />
+						</div>
+                    </div>
+                    <!--/ column 1 -->
+                    
+                    <!-- column 2 -->
+                <div class="column_3">
+                    	<div class="row field_date">
+                          <label>Selezionare data <strong>di arrivo</strong>:</label><br />
+                            <div id="date_in"></div>
+                            <input name="date_in_input" value="" id="date_in_input" type="hidden" />
+						</div>
+                  </div>
+                    <!--/ column 2 -->
+                    
+                    <!-- column 3 -->
+                <div class="column_3 omega">
+                    	<div class="row field_date">
+                          <label>Selezionare data <strong>di partenza</strong>:</label><br />
+                            <div id="date_out"></div>
+                          <input name="date_out_input" value="" id="date_out_input" type="hidden" />
+						</div>
+                  </div>
+                    <!--/ column 3 -->
+                    
+                    <div class="clear"></div>
+                    
+                    <div class="notice_table"><span class="square-green">Vostra selezione</span> <span class="square-disable">non disponibile</span></div>
+                    
+                    <div class="field_submit">
+                        <input type="submit" value="Send Now" id="send" class="btn-send" />
+                        <p class="sending"><img id="sending" src="images/ajax-loader.gif"></p>
+                        <p class="notice">Prego osservare che non trattasi di una effettiva prenotazione, ma di una richiesta di disponibilità. <strong>Sarà nostra cura contattarla al più presto possibile per una successiva conferma. Grazie!</strong></p>
+                        <p class="notice textconfirm">Grazie per averci contattato.<br />Le risponderemo al più presto possibile.</p>
+                        <p class="notice texterror">A causa di un errore sconosciuto, il modulo non è stato inoltrato.<br /> Si prega di reinviare la richiesta o riprovare più tardi.</p>
+                    </div>
+                </form>
+			</div>
+        </div>
+        <!--/ content -->
+        <!-- sidebar -->
+        <div class="grid_6">
+            
+			<div class="box box_gray widget-container widget_recent_entries">
+				<h3><span>Ultime</span> News &amp; Promo</h3>
+				<ul>
+                    <li><a href="#"><img src="images/temp_thumb_1.jpg" alt="" width="50" height="50" border="0" class="thumbnail" /></a> <a href="#"><strong>NEW Le Rose Residence Casa Vacanze</strong>. <em>Nuova Apertura Sabato 29 Ottobre 2011!</em></a> 
+                  <div class="date">Ottobre 27, 2011</div> </li>
+                    <li><a href="#"><img src="images/temp_thumb_2.jpg" alt="" width="50" height="50" border="0" class="thumbnail" /></a> <a href="#">Da non perdere! Il <strong>"fagiolo di Casalbuono"</strong>,<em> prodotto certificato di eccellenza!</em></a> 
+                  <div class="date">Novembre 03, 2011</div> </li>
+                    
+				</ul>
+			</div>
+        </div>
+        <!--/ sidebar -->
+        
+        <div class="clear"></div>
+	</div>
+    <!--/ middle content -->
+    
+    <div class="newsletter_box">
+        <h3>Iscriviti alla Newsletter</h3>
+        <form action="" method="post">
+        	<input type="text" value="Inserisci l'indirizzo e-mail" onfocus="if (this.value == 'Inserisci l'indirizzo e-mail') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Inserisci l'indirizzo e-mail';}" name="" class="inputField" />
+			<input type="submit" value="Submit" class="btn-submit" />
+        </form>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+
+	 <div class="container_24">
+    
+    	<div class="grid_3">
+        <img src="images/logo_footer.png" width="110" height="72" alt="" />
+        </div>
+        
+        <div class="grid_8">
+        	<div class="address">
+                <p>Le Rose Residence Hotel,<br />
+                Via Nazionale 10, Casalbuono (SA), 84030, Italy<br />
+                Telefono: 0975-862326  / Cell: 338-1512274<br />
+                Email: <a href="mailto:info@leroseresidence.com">info@leroseresidence.com</a></p>
+        	</div>
+        </div>
+        
+        <div class="grid_13">
+        
+	
+		<div class="botmenu">
+		<ul>
+			<li class="first current-menu-item"><a href="index.html">Home</a></li>
+			<li><a href="about.html">Chi siamo</a></li>
+			<li><a href="rooms.html">Appartamenti</a></li>
+			<li><a href="rates.html">Prezzi</a></li>
+			<li><a href="location.html">Location</a></li>
+			<li><a href="news.html">News</a></li>
+            <li class="last"><a href="contacts.html">Contatti</a></li>
+		</ul>
+		</div>
+
+            
+            
+	<div class="fallow">
+		<span>Seguici su:</span> 
+		<a href="https://plus.google.com/111788783347084455761" rel="publisher" class="link_social link_gp">Google+</a>
+		<a href="http://www.facebook.com/LeRoseResidence" target="_blank" class="link_social link_fb">Facebook</a>
+	</div>
+	
+	<div class="copyright">
+		<p>&copy; 2012 Le Rose Residence</p>
+	</div>
+        </div>
+        
+        <div class="clear"></div>
+
+	</div>
+    
+</div>
+
+</body>
+</html>
