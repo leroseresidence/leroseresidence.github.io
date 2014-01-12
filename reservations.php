@@ -3,7 +3,7 @@
 
 // Change this with yours data
 $the_blogname   = 'Le Rose Residence';
-$the_myemail 	= 'prenotazioni@leroseresidence.com';
+$the_myemail 	= 'prenotazioni@leroseresidence.net';
 
 
 if(isset($_POST['email'])){
