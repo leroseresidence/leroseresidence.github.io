@@ -3,7 +3,7 @@
 
 // Change this with yours data
 $the_blogname   = 'Le Rose Residence';
-$the_myemail 	= 'prenotazioni@leroseresidence.net';
+$the_myemail 	= 'info@leroseresidence.net';
 
 
 if(isset($_POST['email'])){
@@ -70,7 +70,7 @@ if(isset($_POST['email'])){
 
 			$attach <br />";
 			
-			if(@mail($to,$subject,$message,$header)) $send = true; else $send = false;
+			if( @mail($to,$subject,$message,$header)) $send = true; else $send = false;
 			
 			if(isset($_POST['ajax'])){
 				if ($send)
