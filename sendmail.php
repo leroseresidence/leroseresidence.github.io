@@ -35,7 +35,8 @@ if(isset($_POST['email'])){
 		}
 		$attach.= "<br /> \n";
 		#numeri telfononici validi
-		if (strpos($the_phone, "3")!=0 && strpos($the_phone, "0")!=0) {
+		$first_char = substr($the_phone, 0,1);
+		if ($first_char!="3" && $first_char!="0") {
 			$errorC = true;
 		}
 		
