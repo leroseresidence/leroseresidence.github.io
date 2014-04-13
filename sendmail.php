@@ -34,6 +34,10 @@ if(isset($_POST['email'])){
 			}
 		}
 		$attach.= "<br /> \n";
+		#numeri telfononici validi
+		if (strpos($the_phone, "3")!=0 && strpos($the_phone, "0")!=0) {
+			$errorC = true;
+		}
 		
 		if(!checkmymail($the_email))
 		{
