@@ -45,8 +45,11 @@ img {
     font-family: 'MelbourneBold', Arial, sans-serif;
 }
 
-.mobile-menu-toggle:hover {
-    background: #555;
+.mobile-menu-toggle:hover,
+.mobile-menu-toggle:focus {
+    background: #404040;  /* Keep same as default */
+    color: #fff;          /* Keep white, not purple */
+    cursor: pointer;      /* Keep pointer cursor */
 }
 
 .mobile-menu-toggle span {

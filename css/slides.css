@@ -2,19 +2,23 @@
 	position:relative;
 	top:15px;
 	left:15px;
-	height:379px;
+	max-width: 960px;
+	width: 100%;
+	height: auto;
 	z-index:100;
 }
 
 .slides_container {
 	position:relative;
-	overflow:hidden
+	overflow:hidden;
+	width: 100%;
 }
 
 #slides .next, #slides .prev {
 	position:absolute;
-	top:172px;
-	left:-25px;
+	top:50%;
+	transform: translateY(-50%);
+	left:5px;
 	display:block;
 	width:25px;
 	height:40px;
@@ -25,7 +29,8 @@
 }
 
 #slides .next {
-	left:960px;
+	left: auto;
+	right: 5px;
 	background:url(../images/slider_arrows.png) 0 0 no-repeat;
 }
 
@@ -69,9 +74,13 @@
 	position:absolute;
 	bottom:0;
 	left:0;
-	height:66px;
-	width:860px;
-	padding:30px 56px 0 44px;
+	right:0;
+	height:auto;
+	min-height:66px;
+	width:100%;
+	max-width:860px;
+	padding:15px 20px;
 	background:url(../images/point.png);	
 	line-height:1.33;
+	box-sizing: border-box;
 }
