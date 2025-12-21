@@ -20,7 +20,7 @@ $(function(){
 		// Animate caption out
 		$current.find('.caption').animate({ bottom: -96 }, 100, function() {
 			// Fade out current slide, fade in next slide
-			$current.fadeOut(400);
+			$current.hide();
 			$next.fadeIn(400, function() {
 				// Animate caption in
 				$next.find('.caption').css('bottom', -96).animate({ bottom: 0 }, 200);

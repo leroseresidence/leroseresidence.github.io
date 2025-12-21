@@ -586,7 +586,7 @@ img {
 
 /* Caption responsive */
 .caption {
-    font-size: 14px !important;
+    font-size: 18px !important;
 }
 
 @media screen and (max-width: 768px) {
