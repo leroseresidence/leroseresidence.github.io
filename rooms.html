@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 <title>Gli Appartamenrti | Scegli uno dei nostri appartamenti per le tue vacanze nel vallo di diano</title>
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -10,6 +11,7 @@
 <meta name="keywords" content="casa vacanze, appartamenti, appartamenti vacanze, appartamenti per vacanze, Vallo di Diano, Golfo di Policastro, Residence, Hotel,Hotels,case vacanze, case in  montagna, Certosa di Padula, certosa di san lorenzo, Casalbuono, Comune Casalbuono, appartamenti in affitto" />
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
 	$(function(){
@@ -67,6 +69,9 @@
 	<!-- topmenu -->
 	<div class="menu-header">
 		<div class="container">
+			<button class="mobile-menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
+				Menu <span>☰</span>
+			</button>
 			<ul class="topmenu">
 				<li class="first"><a href="index.html">Home</a></li>
 				<li><a href="about.html">Chi siamo</a></li>
@@ -454,5 +459,11 @@
 
 	</div>
 
+<script>
+function toggleMobileMenu() {
+	var menu = document.querySelector('.topmenu');
+	menu.classList.toggle('active');
+}
+</script>
 </body>
 </html>

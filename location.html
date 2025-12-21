@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 <title>Dove siamo | Come raggiungere Le Rose Residence | Casa Vaganze vicino Autostrada A3</title>
 <meta name="Sorem Broker srl" content="Hotel delle Rose" />
 <meta name="description"
@@ -10,6 +11,7 @@
 <meta name="keywords" content="Casa vacanze, appartamenti in affitto, appartamento, casa, campania, basillicata, Montagna, Buonabitacolo, Salerno, Pertosa, Silla, Teggiano, Sassano, Sala Consilina, Padula, Sanza, Montesano sulla Marcellana, Maratea, Fortino, Lagonegro, Atena Lucana, Certosa di Padula, certosa di san lorenzo, Casalbuono, Comune Casalbuono" />
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
 	$(function(){
@@ -49,6 +51,9 @@
 	<!-- topmenu -->
 	<div class="menu-header">
 		<div class="container">
+			<button class="mobile-menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
+				Menu <span>☰</span>
+			</button>
 			<ul class="topmenu">
 				<li class="first"><a href="index.html">Home</a></li>
 				<li><a href="about.html">Chi siamo</a></li>
@@ -236,5 +241,11 @@
 
 	</div>
 
+<script>
+function toggleMobileMenu() {
+	var menu = document.querySelector('.topmenu');
+	menu.classList.toggle('active');
+}
+</script>
 </body>
 </html>

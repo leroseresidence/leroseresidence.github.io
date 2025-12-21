@@ -2,12 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 <title>Prezzi | Le Rose Residence</title>
 <meta name="author" content="Donato Marrazzo" />
 <meta name="description" content="Mini appartamenti in affitto nel Parco del Cilento - Vallo di Diano. Qui i prezzi dei nostri appartamenti. Possibilità di sconti per comitive e periodi lunghi" />
 <meta name="keywords" content="prezzi appartamenti, appartamenti in affitto, bed & breakfast, vallo di diano, parco del cilento, calsabuono, montesano sulla marcellana, basillicata, il fortino, buonabitacolo" />
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
 	$(function(){
@@ -42,6 +44,9 @@
 <!-- topmenu -->  
 <div class="menu-header">
 	<div class="container">
+		<button class="mobile-menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
+			Menu <span>☰</span>
+		</button>
 		<ul class="topmenu">
 			<li class="first"><a href="index.html">Home</a></li>
 			<li><a href="about.html">Chi siamo</a></li>
@@ -230,7 +235,13 @@
 
 	</div>
 
-</div>
+	</div>
 
+<script>
+function toggleMobileMenu() {
+	var menu = document.querySelector('.topmenu');
+	menu.classList.toggle('active');
+}
+</script>
 </body>
 </html>

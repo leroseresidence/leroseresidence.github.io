@@ -2,11 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 <title>Chi siamo | Le Rose Residence</title>
 <meta name="description" content="Le Rose Residence - Casa Vacanze. Appartamenti per vacanze sito nel Comune di Casalbuono (SA), ubicato nel parco nazionale del Cilento e Vallo di Diano.
 I clienti possono visitare la vicina Certosa di San Lorenzo a Padula, rilassarsi nel verde, passeggiare in montagna, possono raggiungere il mare grazie alle spiagge del vicino Golfo di Policastro e di Maratea. Affitto appartamenti in Casalbuono nel Vallo di Diano" />
 <meta name="keywords" content="Appartamenti, appartamenti vacanze, affitto casa, appartamenti per vacanze, Vallo di Diano, Golfo di Policastro, Residence, Hotel,Hotels,case vacanze, case in  montagna, Certosa di Padula, certosa di san lorenzo, Casalbuono, Comune Casalbuono" />
 <link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
 	$(function(){
@@ -40,6 +42,9 @@ I clienti possono visitare la vicina Certosa di San Lorenzo a Padula, rilassarsi
 <!-- topmenu -->  
 <div class="menu-header">
 	<div class="container">
+		<button class="mobile-menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
+			Menu <span>☰</span>
+		</button>
 		<ul class="topmenu">
 			<li class="first"><a href="index.html">Home</a></li>
 			<li class="current-menu-item"><a href="about.html">Chi siamo</a></li>
@@ -198,5 +203,11 @@ I clienti possono visitare la vicina Certosa di San Lorenzo a Padula, rilassarsi
     
 </div>
 
+<script>
+function toggleMobileMenu() {
+	var menu = document.querySelector('.topmenu');
+	menu.classList.toggle('active');
+}
+</script>
 </body>
 </html>

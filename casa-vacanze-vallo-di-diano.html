@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 <title>Casa Vacanze Vallo di Diano | Le Rose Residence</title>
 <meta name="description" content="Le Rose Residence - Casa Vacanze nel Vallo di Diano offre appartamenti per vacanze con trattamento bed e breakfast. E' situato nel Comune di Casalbuono (Salerno) nel Parco Nazionale del Cilento e Vallo di Diano meta di intinerari turistici e culturali. I nostri ospiti godranno l'aria salubre della montagna e potranno partecipare ad escursioni paesagistiche. Infine anche il mare non è distante e in pochi chilometri si raggiungono le spiagge del Golfo di Policastro o di Maratea" />
 <meta name="keywords" content="casa vacanze, vallo di diano, appartamenti vacanze, case in affitto, case vacanze,  affitto appartamenti, Vallo di Diano, Certosa di Padula" />
@@ -20,6 +21,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/slides.css" />
 <link rel="stylesheet" type="text/css" href="css/custom.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 <script type="text/javascript">
 	$(function(){
 		$('#slides').slides({
@@ -97,7 +99,9 @@
 <!-- topmenu -->  
 <div class="menu-header">
 	<div class="container">
-		
+		<button class="mobile-menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
+			Menu <span>☰</span>
+		</button>
 		<ul class="topmenu">
 			<li class="first current-menu-item"><a href="index.html">Home</a></li>
 			<li><a href="about.html">Chi siamo</a></li>
@@ -265,6 +269,12 @@
 
 	//Animazione hover di promozione
 	//$('#hover_promo').delay(800).fadeIn(1000).delay(6000).fadeOut('slow');
+
+	// Mobile menu toggle
+	function toggleMobileMenu() {
+		var menu = document.querySelector('.topmenu');
+		menu.classList.toggle('active');
+	}
 </script>
 
 </body>

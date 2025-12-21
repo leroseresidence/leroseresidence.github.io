@@ -2,12 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 <title>Shortcodes | Welcome Inn</title>
 <meta name="author" content="ThemeFuse" />
 <meta name="description" content="A short description of your company" />
 <meta name="keywords" content="Some keywords that best describes your businee" />
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
 	$(function(){
@@ -33,7 +35,9 @@
 <!-- topmenu -->  
 <div class="menu-header">
 	<div class="container">
-        
+		<button class="mobile-menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
+			Menu <span>☰</span>
+		</button>
 	        <ul class="topmenu">
 				<li class="first"><a href="index.html">Home</a></li>
               	<li><a href="about.html">About us</a></li>
@@ -278,5 +282,11 @@
     
 </div>
 
+<script>
+function toggleMobileMenu() {
+	var menu = document.querySelector('.topmenu');
+	menu.classList.toggle('active');
+}
+</script>
 </body>
 </html>
