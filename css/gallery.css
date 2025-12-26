@@ -1,0 +1,92 @@
+/* Container for the trigger image */
+.gallery-trigger {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#openGallery {
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#openGallery:hover {
+    transform: scale(1.05);
+}
+
+/* Full-screen dark overlay */
+.overlay {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Center the image and buttons */
+.gallery-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 5%;
+}
+
+#galleryImg {
+    max-width: 65%;
+    max-height: 80%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Navigation & Close Buttons */
+.nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.nav-btn:hover {
+    color: #bbb;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px; 
+    right: 40px;
+    color: white; 
+    font-size: 50px; 
+    cursor: pointer;
+}
+
+.gallery-wrapper {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Left-align gallery wrapper on desktop */
+@media screen and (min-width: 769px) {
+    .gallery-wrapper {
+        text-align: left;
+        float: left;
+    }
+}
+.trigger-img {
+    cursor: pointer;
+    border-radius: 4px;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Allow full width on mobile */
+@media screen and (max-width: 768px) {
+    .trigger-img {
+        max-width: 100%;
+    }
+}

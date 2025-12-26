@@ -12,6 +12,7 @@
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
 <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="css/gallery.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
 	$(function(){
@@ -113,12 +114,19 @@
 						<div class="room-item">
 							<h2>Appartamento Rose Rosse</h2>
 
-							<div class="image">
-								<img src="images/appartamenti/rose_rosse_01.jpg" alt="" width="234" height="180" border="1" /><br /> <a href="images/appartamenti/rose_rosse_01.jpg" class="hide link-zoom" rel="prettyPhoto[room_1]">Visualizza foto gallery</a> <a href="images/appartamenti/rose_rosse_02.jpg" class="hide"
-									rel="prettyPhoto[room_1]"
-								>Foto 2</a> <a href="images/appartamenti/rose_rosse_03.jpg" class="hide" rel="prettyPhoto[room_1]">Foto 3</a> <a href="images/appartamenti/rose_rosse_04.jpg" class="hide" rel="prettyPhoto[room_1]">Foto 4</a> <a href="images/appartamenti/rose_rosse_05.jpg" class="hide" rel="prettyPhoto[room_1]">Foto
-									5</a> <a href="images/appartamenti/rose_rosse_06.jpg" class="hide" rel="prettyPhoto[room_1]">Foto 6</a> <a href="images/appartamenti/rose_rosse_07.jpg" class="hide" rel="prettyPhoto[room_1]">Foto 7</a> <a href="images/appartamenti/rose_rosse_08.jpg" class="hide" rel="prettyPhoto[room_1]">Foto
-									8</a>
+							<div class="gallery-wrapper"
+							 data-images="images/appartamenti/rose_rosse_01.jpg, images/appartamenti/rose_rosse_02.jpg, images/appartamenti/rose_rosse_03.jpg, images/appartamenti/rose_rosse_04.jpg, images/appartamenti/rose_rosse_05.jpg, images/appartamenti/rose_rosse_06.jpg, images/appartamenti/rose_rosse_07.jpg, images/appartamenti/rose_rosse_08.jpg">
+								<img src="images/appartamenti/rose_rosse_01.jpg" class="trigger-img" alt="Rose Rosse Gallery">
+								<p><a href="javascript:void(0)" class="trigger-link link-zoom"">Visualizza foto gallery</a></p>
+							</div>
+						
+							<div id="galleryOverlay" class="overlay">
+								<span class="close-btn">&times;</span>
+								<div class="gallery-content">
+									<button class="nav-btn" id="prevBtn">&#10094;</button>
+									<img src="" id="galleryImg" alt="Gallery Image">
+									<button class="nav-btn" id="nextBtn">&#10095;</button>
+								</div>
 							</div>
 
 							<div class="description">
@@ -160,12 +168,10 @@
 						<div class="room-item">
 							<h2>Appartamento Rose Arancio</h2>
 
-							<div class="image">
-								<img src="images/appartamenti/rose_arancio_01.jpg" width="234" height="180" alt="" /><br /> <a href="images/appartamenti/rose_arancio_01.jpg" class="hide link-zoom" rel="prettyPhoto[room_2]">Visualizza foto gallery</a> <a href="images/appartamenti/rose_arancio_02.jpg" class="hide"
-									rel="prettyPhoto[room_2]"
-								>Foto 2</a> <a href="images/appartamenti/rose_arancio_03.jpg" class="hide" rel="prettyPhoto[room_2]">Foto 3</a> <a href="images/appartamenti/rose_arancio_04.jpg" class="hide" rel="prettyPhoto[room_2]">Foto 4</a> <a href="images/appartamenti/rose_arancio_05.jpg" class="hide"
-									rel="prettyPhoto[room_2]"
-								>Foto 5</a> <a href="images/appartamenti/rose_arancio_06.jpg" class="hide" rel="prettyPhoto[room_2]">Foto 6</a>
+							<div class="gallery-wrapper"
+							 data-images="images/appartamenti/rose_arancio_01.jpg, images/appartamenti/rose_arancio_02.jpg, images/appartamenti/rose_arancio_03.jpg, images/appartamenti/rose_arancio_04.jpg, images/appartamenti/rose_arancio_05.jpg, images/appartamenti/rose_arancio_06.jpg">
+								<img src="images/appartamenti/rose_arancio_01.jpg" class="trigger-img" alt="Rose Arancio Gallery">
+								<p><a href="javascript:void(0)" class="trigger-link link-zoom">Visualizza foto gallery</a></p>
 							</div>
 
 							<div class="description">
@@ -206,12 +212,10 @@
 						<div class="room-item">
 							<h2>Appartamento ROSE ROSA</h2>
 
-							<div class="image">
-								<img src="images/appartamenti/rose_rosa_07.jpg" width="234" height="180" alt="" /><br /> <a href="images/appartamenti/rose_rosa_01.jpg" class="hide link-zoom" rel="prettyPhoto[room_3]">Visualizza foto gallery</a> <a href="images/appartamenti/rose_rosa_02.jpg" class="hide"
-									rel="prettyPhoto[room_3]"
-								>Foto 2</a> <a href="images/appartamenti/rose_rosa_03.jpg" class="hide" rel="prettyPhoto[room_3]">Foto 3</a> <a href="images/appartamenti/rose_rosa_04.jpg" class="hide" rel="prettyPhoto[room_3]">Foto 4</a> <a href="images/appartamenti/rose_rosa_05.jpg" class="hide" rel="prettyPhoto[room_3]">Foto
-									5</a> <a href="images/appartamenti/rose_rosa_06.jpg" class="hide" rel="prettyPhoto[room_3]">Foto 6</a> <a href="images/appartamenti/rose_rosa_07.jpg" class="hide" rel="prettyPhoto[room_3]">Foto 7</a> <a href="images/appartamenti/rose_rosa_08.jpg" class="hide" rel="prettyPhoto[room_3]">Foto
-									8</a>
+							<div class="gallery-wrapper"
+							 data-images="images/appartamenti/rose_rosa_01.jpg, images/appartamenti/rose_rosa_02.jpg, images/appartamenti/rose_rosa_03.jpg, images/appartamenti/rose_rosa_04.jpg, images/appartamenti/rose_rosa_05.jpg, images/appartamenti/rose_rosa_06.jpg, images/appartamenti/rose_rosa_07.jpg, images/appartamenti/rose_rosa_08.jpg">
+								<img src="images/appartamenti/rose_rosa_07.jpg" class="trigger-img" alt="Rose Rosa Gallery">
+								<p><a href="javascript:void(0)" class="trigger-link link-zoom">Visualizza foto gallery</a></p>
 							</div>
 
 							<div class="description">
@@ -253,12 +257,10 @@
 						<div class="room-item">
 							<h2>Appartamento Rose Bianche</h2>
 
-							<div class="image">
-								<img src="images/appartamenti/rose_bianche_02.jpg" width="234" height="180" alt="" /><br /> <a href="images/appartamenti/rose_bianche_01.jpg" class="hide link-zoom" rel="prettyPhoto[room_4]">Visualizza foto gallery</a> <a href="images/appartamenti/rose_bianche_02.jpg" class="hide"
-									rel="prettyPhoto[room_4]"
-								>Foto 2</a> <a href="images/appartamenti/rose_bianche_03.jpg" class="hide" rel="prettyPhoto[room_4]">Foto 3</a> <a href="images/appartamenti/rose_bianche_04.jpg" class="hide" rel="prettyPhoto[room_4]">Foto 4</a> <a href="images/appartamenti/rose_bianche_05.jpg" class="hide"
-									rel="prettyPhoto[room_4]"
-								>Foto 5</a> <a href="images/appartamenti/rose_bianche_06.jpg" class="hide" rel="prettyPhoto[room_4]">Foto 6</a>
+							<div class="gallery-wrapper"
+							 data-images="images/appartamenti/rose_bianche_01.jpg, images/appartamenti/rose_bianche_02.jpg, images/appartamenti/rose_bianche_03.jpg, images/appartamenti/rose_bianche_04.jpg, images/appartamenti/rose_bianche_05.jpg, images/appartamenti/rose_bianche_06.jpg">
+								<img src="images/appartamenti/rose_bianche_02.jpg" class="trigger-img" alt="Rose Bianche Gallery">
+								<p><a href="javascript:void(0)" class="trigger-link link-zoom">Visualizza foto gallery</a></p>
 							</div>
 
 							<div class="description">
@@ -298,10 +300,10 @@
 						<div class="room-item">
 							<h2>Appartamento Rose Gialle</h2>
 
-							<div class="image">
-								<img src="images/appartamenti/rose_gialle_01.jpg" width="234" height="180" alt="" /><br /> <a href="images/appartamenti/rose_gialle_01.jpg" class="hide link-zoom" rel="prettyPhoto[room_5]">Visualizza foto gallery</a> <a href="images/appartamenti/rose_gialle_02.jpg" class="hide"
-									rel="prettyPhoto[room_5]"
-								>Foto 2</a> <a href="images/appartamenti/rose_gialle_03.jpg" class="hide" rel="prettyPhoto[room_5]">Foto 3</a> <a href="images/appartamenti/rose_gialle_04.jpg" class="hide" rel="prettyPhoto[room_5]">Foto 4</a>
+							<div class="gallery-wrapper"
+							 data-images="images/appartamenti/rose_gialle_01.jpg, images/appartamenti/rose_gialle_02.jpg, images/appartamenti/rose_gialle_03.jpg, images/appartamenti/rose_gialle_04.jpg">
+								<img src="images/appartamenti/rose_gialle_01.jpg" class="trigger-img" alt="Rose Gialle Gallery">
+								<p><a href="javascript:void(0)" class="trigger-link link-zoom">Visualizza foto gallery</a></p>
 							</div>
 
 							<div class="description">
@@ -343,14 +345,10 @@
 						<div class="room-item">
 							<h2>Giardino</h2>
 
-							<div class="image">
-								<img src="images/appartamenti/rose_giardino_01.jpg" width="234" height="180" alt="" /><br /> <a href="images/appartamenti/rose_giardino_01.jpg" class="hide link-zoom" rel="prettyPhoto[room_6]">Visualizza foto gallery</a> <a href="images/appartamenti/rose_giardino_02.jpg" class="hide"
-									rel="prettyPhoto[room_6]"
-								>Foto 2</a> <a href="images/appartamenti/rose_giardino_03.jpg" class="hide" rel="prettyPhoto[room_6]">Foto 3</a> <a href="images/appartamenti/rose_giardino_04.jpg" class="hide" rel="prettyPhoto[room_6]">Foto 4</a> <a href="images/appartamenti/rose_giardino_05.jpg" class="hide"
-									rel="prettyPhoto[room_6]"
-								>Foto 5</a> <a href="images/appartamenti/rose_giardino_06.jpg" class="hide" rel="prettyPhoto[room_6]">Foto 6</a> <a href="images/appartamenti/rose_giardino_07.jpg" class="hide" rel="prettyPhoto[room_6]">Foto 7</a> <a href="images/appartamenti/rose_giardino_08.jpg" class="hide"
-									rel="prettyPhoto[room_6]"
-								>Foto 8</a> <a href="images/appartamenti/rose_giardino_09.jpg" class="hide" rel="prettyPhoto[room_6]">Foto 9</a> <a href="images/appartamenti/rose_giardino_10.jpg" class="hide" rel="prettyPhoto[room_6]">Foto 10</a>
+							<div class="gallery-wrapper"
+							 data-images="images/appartamenti/rose_giardino_01.jpg, images/appartamenti/rose_giardino_02.jpg, images/appartamenti/rose_giardino_03.jpg, images/appartamenti/rose_giardino_04.jpg, images/appartamenti/rose_giardino_05.jpg, images/appartamenti/rose_giardino_06.jpg, images/appartamenti/rose_giardino_07.jpg, images/appartamenti/rose_giardino_08.jpg, images/appartamenti/rose_giardino_09.jpg, images/appartamenti/rose_giardino_10.jpg">
+								<img src="images/appartamenti/rose_giardino_01.jpg" class="trigger-img" alt="Giardino Gallery">
+								<p><a href="javascript:void(0)" class="trigger-link link-zoom">Visualizza foto gallery</a></p>
 							</div>
 
 							<div class="description">
@@ -457,5 +455,6 @@ function toggleMobileMenu() {
 	menu.classList.toggle('active');
 }
 </script>
+<script src="js/gallery.js"></script>
 </body>
 </html>
