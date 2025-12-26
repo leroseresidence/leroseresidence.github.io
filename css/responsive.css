@@ -628,3 +628,11 @@ img {
     }
 }
 
+/* TripAdvisor social button bubbles */
+div.socialWidgetCore.green.sm {
+    width: 32px !important;
+}
+
+div.socialWidgetCore.green.sm > img{
+    width: 100% !important;
+}
