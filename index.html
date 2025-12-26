@@ -10,8 +10,8 @@
 
 <meta property="og:title" content="Le Rose Residence" />
 <meta property="og:type" content="hotel" />
-<meta property="og:url" content="http://www.leroseresidence.com" />
-<meta property="og:image" content="http://www.leroseresidence.com/images/logo.png" />
+<meta property="og:url" content="https://www.leroseresidence.com" />
+<meta property="og:image" content="https://www.leroseresidence.com/images/logo.png" />
 <meta property="og:site_name" content="Le Rose Residence" />
 <meta property="fb:app_id" content="154640171326260" />
 
@@ -36,16 +36,12 @@
 </head>
 
 <body>
-<!--Facebook dev-->
+<!--Facebook SDK -->
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.4&appId=154640171326260";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!--#Facebook dev-->
+<script async defer crossorigin="anonymous" 
+  src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v21.0&appId=154640171326260" 
+  nonce="facebookSDK"></script>
+<!--#Facebook SDK-->
 
 <div class="head">
 	<div class="container">
@@ -54,7 +50,13 @@
 		<div class="head_right">
 			<div class="icon-top icon-phone">Per Informazioni Chiamare al Numero: <a href="tel:+393381512274">+39-338-1512274</a></div>
 			<div class="icon-top icon-map">Via Nazionale 10, Casalbuono (SA), <a href="location.html"><span>Visualizza sulla Mappa</span></a></div>
-			<div class="fb-like" data-send="false" data-layout="standard" data-width="220" data-show-faces="false" data-action="like" data-colorscheme="light"></div>
+			<div class="fb-like" 
+	data-href="https://www.facebook.com/LeRoseResidence" 
+	data-layout="button_count" 
+	data-action="like" 
+	data-size="small" 
+	data-share="true"
+	data-lazy="true"></div>
 			<!-- TripAdvidor BEGIN -->
 			<div id="TA_socialButtonBubbles95" class="TA_socialButtonBubbles">
 			<ul id="14mCvVIzxm" class="TA_links PYEz32SnzUo">
