@@ -321,9 +321,9 @@ img {
 }
 
 /*============================================================================================*/
-/* MOBILE STYLES - Max 768px */
+/* MOBILE STYLES - Max 942px */
 /*============================================================================================*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 942px) {
     
     /* Show mobile menu toggle */
     .mobile-menu-toggle {
@@ -588,7 +588,7 @@ img {
     font-size: 18px !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 942px) {
     .caption {
         font-size: 12px !important;
         padding: 10px !important;
