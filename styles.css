@@ -926,10 +926,7 @@ body {
 	padding-left:21px;
 	margin-left:12px;}
 
-.link_gp {
-		background:url(images/social_gp.gif) 0 0 no-repeat}
-		
-		.link_fb {
+.link_fb {
 	background:url(images/social_fb.gif) 0 0 no-repeat}
 
 .link_twitter {
@@ -1503,9 +1500,6 @@ ul.bordered li {
 
 .social-facebook {
 	background:url(images/contact_social.png) 0 -72px no-repeat}
-
-.social-googleplus {
-	background:url(images/contact_social.png) 0 -96px no-repeat}
 		
 /*----------------------------------------------*/
 /* 4.9 Reservetion Form */
